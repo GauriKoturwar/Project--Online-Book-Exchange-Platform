@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url('/pexels-nitin-arya-386173-1029141 (1).jpg') no-repeat center center/cover;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg,#222,#444);
+  color: #fff;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #e2b875;
+}
+
+/* OVERLAY (FIXED) */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(236, 117, 6, 0.3);
+  z-index: 0;
+}
+
+/* CENTER BOX */
+.auth-container {
+  position: relative;
+  z-index: 2;
+  width: 350px;
+  margin: 120px auto;
+  padding: 40px;
+  background: rgba(209, 130, 57, 0.95);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* HIDE RADIO */
+input[type="radio"] {
+  display: none;
+}
+
+/* TABS */
+.tab-buttons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab-buttons label {
+  flex: 1;
+  padding: 10px;
+  background: #eee;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+}
+
+#tab-login:checked ~ .tab-buttons label[for="tab-login"],
+#tab-signup:checked ~ .tab-buttons label[for="tab-signup"] {
+  background: #fa9b03;
+  color: white;
+}
+
+/* FORMS */
+.form {
+  display: none;
+}
+
+#tab-login:checked ~ #login-form {
+  display: block;
+}
+
+#tab-signup:checked ~ #signup-form {
+  display: block;
+}
+
+/* INPUT */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTON */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #f39c12;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #e67e22;
+}

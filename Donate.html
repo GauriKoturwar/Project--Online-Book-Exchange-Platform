@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Books</title>
+  <link rel="stylesheet" href="Donate.css">
+</head>
+<body>
+
+<section class="donate-section">
+  <h2>Donate Books & Give Your Books a New Chapter</h2>
+  <p>Support Literacy. Declutter Your Shelves</p>
+
+  <!-- CONNECTED FORM -->
+  <form class="donate-form" action="donate.php" method="POST">
+
+    <label>Book Title</label>
+    <input type="text" name="title" placeholder="Enter Book name" required>
+
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Enter your email" required>
+
+    <label>Book Condition</label>
+    <input type="text" name="condition" placeholder="Enter book condition" required>
+
+    <label>Short Description On Book</label>
+    <textarea name="description" placeholder="Write a short description (Optional)"></textarea>
+
+    <button type="submit">Donate Your Old Books</button>
+
+  </form>
+</section>
+
+</body>
+</html>
